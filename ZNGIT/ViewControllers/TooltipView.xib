@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="BentonSans-Bold.otf">
+            <string>BentonSans-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZNTooltipView">
+            <rect key="frame" x="0.0" y="0.0" width="245" height="116"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial_frame1" translatesAutoresizingMaskIntoConstraints="NO" id="3Cv-YJ-kwn">
+                    <rect key="frame" x="0.0" y="0.0" width="245" height="116"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SEARCH FOR AN ITEM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IZ-h9-sz8">
+                    <rect key="frame" x="56" y="19" width="134" height="12"/>
+                    <fontDescription key="fontDescription" name="BentonSans-Bold" family="BentonSans" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.73725490196078436" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4t-gX-ylE">
+                    <rect key="frame" x="19" y="47" width="207" height="42"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Search for any item you want to rent my clicking here">
+                            <attributes>
+                                <color key="NSColor" red="0.61568627450980395" green="0.61568627450980395" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="15" name="BentonSans-ExtraLight"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="21" maximumLineHeight="21"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="6IZ-h9-sz8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="19" id="AWp-ag-W8t"/>
+                <constraint firstItem="v4t-gX-ylE" firstAttribute="top" secondItem="6IZ-h9-sz8" secondAttribute="bottom" constant="16" id="OJY-hm-OFi"/>
+                <constraint firstItem="6IZ-h9-sz8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Phd-bs-WpE"/>
+                <constraint firstAttribute="bottom" secondItem="3Cv-YJ-kwn" secondAttribute="bottom" id="ZZI-a0-rsw"/>
+                <constraint firstAttribute="trailing" secondItem="3Cv-YJ-kwn" secondAttribute="trailing" id="cCn-OK-jz2"/>
+                <constraint firstItem="3Cv-YJ-kwn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gHa-jS-9Mh"/>
+                <constraint firstAttribute="trailing" secondItem="v4t-gX-ylE" secondAttribute="trailing" constant="19" id="tPh-IS-aEs"/>
+                <constraint firstItem="3Cv-YJ-kwn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tgM-do-Ysq"/>
+                <constraint firstItem="v4t-gX-ylE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="19" id="yWS-wg-huw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="frameImageView" destination="3Cv-YJ-kwn" id="zFW-02-N7q"/>
+                <outlet property="messageLabel" destination="v4t-gX-ylE" id="hck-W8-Vx7"/>
+                <outlet property="titleLabel" destination="6IZ-h9-sz8" id="3s5-tq-4VX"/>
+            </connections>
+            <point key="canvasLocation" x="186.5" y="313"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tutorial_frame1" width="504" height="251"/>
+    </resources>
+</document>

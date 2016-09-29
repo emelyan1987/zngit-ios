@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="BentonSans-Bold.otf">
+            <string>BentonSans-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZNEmptyView1">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOq-an-vDK">
+                    <rect key="frame" x="45" y="18" width="255" height="60"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Sorry, we don’t have any shops in that city right now! Let us know if you want to suggest it to us.">
+                            <attributes>
+                                <color key="NSColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="BentonSans"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="20" maximumLineHeight="20"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibe-9s-HiC">
+                    <rect key="frame" x="45" y="120" width="255" height="54"/>
+                    <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="mkQ-CN-cfH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BentonSans-Bold" family="BentonSans" pointSize="15"/>
+                    <state key="normal" title="Continue">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="continueButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="LFm-Gd-HMG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ibe-9s-HiC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="2Jf-ng-FqO"/>
+                <constraint firstAttribute="trailing" secondItem="Ibe-9s-HiC" secondAttribute="trailing" constant="45" id="8tI-ur-qrx"/>
+                <constraint firstItem="cOq-an-vDK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="18" id="VCR-fY-kk2"/>
+                <constraint firstAttribute="trailing" secondItem="cOq-an-vDK" secondAttribute="trailing" constant="45" id="ntx-HI-irJ"/>
+                <constraint firstItem="Ibe-9s-HiC" firstAttribute="top" secondItem="cOq-an-vDK" secondAttribute="bottom" constant="42" id="tgO-jM-kvn"/>
+                <constraint firstItem="cOq-an-vDK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="ura-wQ-ppH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="continueButton" destination="Ibe-9s-HiC" id="vWq-XX-oqe"/>
+                <outlet property="messageLabel" destination="cOq-an-vDK" id="oth-41-xQL"/>
+            </connections>
+            <point key="canvasLocation" x="461.5" y="406"/>
+        </view>
+    </objects>
+</document>
